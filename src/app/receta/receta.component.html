@@ -13,8 +13,10 @@
           <span class="label label-primary" (click)="sumarLike()">{{likes}} Likes </span>
 
           <section class="ingredientes">
-            <h4>Ingredientes</h4>
-            <ol>
+
+              <span class="label label-primary" (click)="calculacantidad()">{{likes}} </span>
+            <h4>Ingredientes <button class="desplegable" onclick="mostrar()" ><</button></h4> 
+            <ol *ngIf="show">
               <li *ngFor="let ingrediente of ingredientes">
             {{ingrediente}}
           </li>

@@ -20,7 +20,7 @@ p{
     }
 
 
-span.label{
+.caption span.label{
 margin-top: 5px;
 float: right;
 
@@ -33,9 +33,7 @@ font-weight: bold;
 
 }
 
-.ingredientes{
-
-    h4{
+.ingredientes h4{
 text-align: center;
 font-size: 1.2em;
 border-bottom: 1px solid grey;
@@ -46,4 +44,27 @@ padding: 5px 0px;
 
     }
 
+.ingredientes span.label{
+
+float: left;
+width: 50px;
+height: 20px;
+
+
 }
+
+.ingredientes span{
+
+    padding-bottom: 20px;
+
+}
+
+
+.desplegable{
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+   float: right;
+}
+

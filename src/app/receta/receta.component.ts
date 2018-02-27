@@ -18,6 +18,9 @@ export class RecetaComponent implements OnInit {
   fotoglutenfree: string;
   cocinero: string;
   ingredientes: string[];
+  show: boolean;
+  icono:string;
+  
 
   constructor() {
 
@@ -30,6 +33,8 @@ export class RecetaComponent implements OnInit {
     this.fotoglutenfree = 'assets/img/glutenfree.png';
     this.cocinero = "Karlos Arguiñano";
     this.ingredientes=['Calamares','Limon','Salsa AliOli','Pan'];
+    this.show=false;
+
 
     console.log("RecetaComponent constructor");
   }
@@ -45,4 +50,11 @@ export class RecetaComponent implements OnInit {
 
     this.likes++;
   }
+
+  mostrar(){
+    this.show=true;
+
+  }
+
+
 }
