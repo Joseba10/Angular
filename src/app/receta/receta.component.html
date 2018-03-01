@@ -12,14 +12,18 @@
           <span class="cocinero">{{cocinero}}</span>
           <span class="label label-primary" (click)="sumarLike()">{{likes}} Likes </span>
 
-          <section class="ingredientes">
 
-              <span class="label label-primary" (click)="calculacantidad()">{{likes}} </span>
-            <h4>Ingredientes <button class="desplegable" onclick="mostrar()" ><</button></h4> 
+          <section class="ingredientes">
+     
+            <h4 (click)="showingredientes()">Ingredientes
+              <span class="glyphicon {{icono}}" aria-hidden="true"></span>
+           <span class="badge">{{ingredientes.length}}</span>
+            </h4>
+        
             <ol *ngIf="show">
               <li *ngFor="let ingrediente of ingredientes">
-            {{ingrediente}}
-          </li>
+                {{ingrediente}}
+              </li>
 
 
             </ol>

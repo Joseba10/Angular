@@ -44,6 +44,14 @@ padding: 5px 0px;
 
     }
 
+    .ingredientes h4:hover{
+
+        cursor: pointer;
+    }
+
+
+
+
 .ingredientes span.label{
 
 float: left;
@@ -55,16 +63,12 @@ height: 20px;
 
 .ingredientes span{
 
-    padding-bottom: 20px;
+
+    float: right;
+    margin-right: 10px;
 
 }
 
 
-.desplegable{
 
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-   float: right;
-}
 
