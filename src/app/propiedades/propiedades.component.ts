@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropiedadesComponent implements OnInit {
 
-  constructor() { }
+  //atributos
+  ocultar : boolean;
+  color: string;
+  enlace: string;
+
+  constructor() {
+     console.log('PropiedadesComponent constructor');
+     this.ocultar = true;
+     this.color = 'teal';
+     this.enlace = 'https://angular.io/api';
+  }
 
   ngOnInit() {
+    console.log('PropiedadesComponent ngOnInit');
   }
 
 }

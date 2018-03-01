@@ -5,16 +5,23 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RecetaComponent } from './receta/receta.component';
 import { PropiedadesComponent } from './propiedades/propiedades.component';
+import { Page404Component } from './page404/page404.component';
+import { AppRouter } from './app.route';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RecetaComponent,
-    PropiedadesComponent
+    PropiedadesComponent,
+    Page404Component,
+    HomeComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouter
   ],
   providers: [],
   bootstrap: [AppComponent]
