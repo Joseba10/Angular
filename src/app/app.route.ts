@@ -14,10 +14,13 @@ import {Page404Component} from './page404/page404.component';
 
 import {HomeComponent} from './home/home.component';
 
+import {UsuarioComponent} from './usuario/usuario.component';
+
 //Rutas
 const appRoutes: Routes=[ 
     {path:'',component:HomeComponent},
 { path: 'receta', component: RecetaComponent },
+{ path: 'usuario', component: UsuarioComponent },
 { path: 'propiedades', component: PropiedadesComponent },
 { path: '**', component: Page404Component }
 
