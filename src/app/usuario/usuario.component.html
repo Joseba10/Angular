@@ -50,15 +50,15 @@
     
                     </div>
                     <div class="avatar">
-                        <img alt="" src="https://i.pinimg.com/736x/61/9c/57/619c5741c5294ebd8d10923f67ddae4f--create-an-avatar-sites.jpg">
+                        <img alt="" src="{{usuario.avatar}}">
                     </div>
                     <div class="info">
                         <div class="title">
-                            <a target="_blank" href="http://scripteden.com/">Script Eden</a>
+                           <p>{{usuario.nombre}} {{usuario.apellido}}</p>
                         </div>
                         <div class="desc"></div>
-                        <div class="desc">Curious developer</div>
-                        <div class="desc">Tech geek</div>
+                        <div class="desc">{{usuario.email}}</div>
+                        <div class="desc">{{usuario.sexo}}</div>
                     </div>
                     <div class="bottom">
                         <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
@@ -83,6 +83,23 @@
         </div>
        
             </div>
+
+
+{{usuario | json}}
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="{{usuario.avatar}}" alt="{{usuario.nombre}}">
+                    <div class="caption">
+                      <h3>{{usuario.nombre}}</h3>
+                      <p>{{usuario.apellido}}</p>
+                      <p>{{usuario.email}}</p>
+                      <p>{{usuario.sexo}}</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 </body>
 </html>
 

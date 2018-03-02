@@ -15,6 +15,7 @@ import {Page404Component} from './page404/page404.component';
 import {HomeComponent} from './home/home.component';
 
 import {UsuarioComponent} from './usuario/usuario.component';
+import {ConcesionarioComponent} from './concesionario/concesionario.component';
 
 //Rutas
 const appRoutes: Routes=[ 
@@ -22,6 +23,7 @@ const appRoutes: Routes=[
 { path: 'receta', component: RecetaComponent },
 { path: 'usuario', component: UsuarioComponent },
 { path: 'propiedades', component: PropiedadesComponent },
+{ path: 'concesionario', component: ConcesionarioComponent },
 { path: '**', component: Page404Component }
 
 ];
