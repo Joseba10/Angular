@@ -1,76 +1,17 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalCoche">
-  Introducir nuevo Coche
+  Crear Mi Coche
 </button>
 
-<!-- Modal  -->
+<!-- Modal -->
 <div class="modal fade" id="modalCoche" tabindex="-1" role="dialog" aria-labelledby="modalReceta">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Nuevo Coche</h4>
       </div>
-
       <div class="modal-body">
-<!-->Meter un formgroup -->
-        <form class="form-inline">
-          <div class="col-xs-6">
-            <label class="center-block">Marca:
-              <input class="form-control" formControlName="marca" >
-            </label>
-            <div class="text-danger">
-              *La Marca no es correcta, mínimo 4 letras
-            </div>
-
-            <label class="center-block">Modelo:
-              <input class="form-control">
-            </label>
-            <div class="text-danger">
-              *Modelo no es correcto, mínimo 2 letras
-            </div>
-
-            <label class="center-block">Version:
-              <input class="form-control">
-          </label> 
-
-          <label class="center-block">Puertas:
-              <input class="form-control" >
-          </label> 
-
-          <label class="center-block">Caballos:
-              <input class="form-control" >
-          </label> 
-
-          <label class="center-block">Consumo:
-              <input class="form-control" >
-          </label> 
-          </div>
-
-          <div class="col-xs-6">
-            <img  alt="coche nuevo" class="img-responsive"/>
-            <label class="center-block">Foto:
-                <input class="form-control" >
-            </label>               
-          </div> 
-        </form>
-
-        <hr>
-            <button type="submit" class="btn btn-primary btn-block">Guardar</button> 
-
-      </div>
-
-
-    </div>
-
-  </div>
-</div>
-
-
-
-<!--  <div class="modal-body">
           <p>Form values: {{ formulario.value | json}}</p>
           <p>Form status: {{ formulario.status | json }}</p>
         <hr>
@@ -121,4 +62,7 @@
         </form>
 
       </div>       
-    </div>-->
+    </div>
+  </div>
+</div>
+
