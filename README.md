@@ -10,6 +10,10 @@ Proyecto para Aprender Angular
 * ReactiveForms
 * Services
 
+## Instalacion App Angular
+Ejecutar `npm install`
+Arrancar App `ng serve --open`
+
 ## tag v1
 Listado de Recetas y alta de nuevas recetas con Json.
 
