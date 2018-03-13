@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Buscador de Recetas</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="titulo col-md-5">
+      <h2>{{receta.nombre}}</h2>
+      <a class="thumbnail">
+        <!-- Mostrar foto con imagen y gluten-->
+        <img src="{{receta.imagen}}" alt="{{receta.nombre}}">
+        <img [src]=" (receta.isGlutenFree) ? 'assets/imgs/gluten_free_icon.png' : 'assets/imgs/gluten_icon.png' " alt="info gluten" class="icono-gluten">
+      </a>
+      <!-- Mostrar foto con imagen y gluten-->
+      <p>
+        <!-- Mostrar Likes-->
+        <span class="boton label label-primary" aria-hidden="true"> Likes {{receta.likes}}</span>
+        <!-- Mostrar Likes-->
+        <!-- Mostrar Cocinero -->
+        <span id="cocinero">By {{receta.cocinero}}</span>
+        <!-- Mostrar Cocinero -->
+      </p>
+
+    </div>
+    <div id="ingredientes"class="col-md-7">
+      <h2>Ingredientes</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor='let ingrediente of receta.ingredientes'>{{ingrediente}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="recetaDesc">
+    <p>{{receta.descripcion}}</p>
+  </div>
+
+
+</body>
+
+</html>

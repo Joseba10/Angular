@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Buscador de Recetas</title>
+</head>
+
+<body>
+
+  <!-- {{recetaSelec|json}} -->
+  <div class="container">
+    <app-formulario></app-formulario> <!--Formulario con ventana modal-->
+  <div class="input-group" id="buscadorRecetas">
+
+
+      <input type="text" class="form-control" placeholder="Busca receta por nombre, cocinero o ingredientes" [(ngModel)]="searchText" aria-describedby="basic-addon2">
+      <span class="input-group-addon glyphicon glyphicon-search"></span>
+    </div>
+<div class="row">
+
+<div class="col-md-4">
+    <h1>Lista de Recetas</h1>
+    <label for="glutenFilter">Recetas sin Gluten</label>
+    <input type="checkbox" [(ngModel)]="glutenFilter" name="glutenFilter">
+<div id="titulo">
+    <a  *ngFor='let receta of recetas | filterRecetas : searchText : glutenFilter' class="list-group-item" (click)="seleccionarReceta(receta)">
+      <b>{{receta.nombre}}</b> <br> <em>{{receta.cocinero}}</em>
+      <img [src]=" (receta.isGlutenFree) ? 'assets/imgs/gluten_free_icon.png' : 'assets/imgs/gluten_icon.png' " alt="info gluten" class="icono-gluten">
+  </a></div>
+      <div class="list-group">
+
+    
+ 
+
+  </div>
+
+
+</div>
+
+<div id="detalleReceta" class="col-md-8">
+    <app-recetario-detalle [receta]="recetaSelec"></app-recetario-detalle>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<!--
+  <div class="row">
+    <div class="col-xs-2">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>Listado Recetas</h3>
+        </div>
+
+        <div class="panel-body">
+         
+          <ul> -->
+            <!---Iteracion de recetas,solo saca los elementos en este ambito que es el for
+            <li *ngFor="let receta of recetas" (click)="seleccionarReceta(receta)">{{receta.nombre}}</li>
+
+          </ul>
+       
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h1 class="text-center"> Receta </h1>
+
+      <div class="col-xs-5">
+        <h3>{{recetaSelec.nombre}}</h3>
+        <app-recetario-detalle [receta]="recetaSelec"></app-recetario-detalle>
+
+        <img src="{{recetaSelec.imagen}}">
+        <p>{{recetaSelec.cocinero}}</p>
+      </div>
+      <div class="col-xs-5">
+        <h3>Ingredientes</h3>
+        <p>{{recetaSelec.ingredientes}}</p>
+        <p class="label label-primary">Likes {{recetaSelec.likes}}</p>
+
+      </div>
+
+      <div class="col-xs-12">
+        <h3>Descripcion</h3>
+        <p>{{recetaSelec.descripcion}}</p>
+      
+
+      </div>
+
+
+
+    </div>
+
+  </div> -->
+  <!-- <div class="row"> -->
+</body>
+
+</html>
