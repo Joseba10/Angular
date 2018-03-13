@@ -44,7 +44,11 @@ onSubmit(event){
   this.coche = this.mapperFormToCoche(this.formulario);
 
   //limpiar formulario
-  this.formulario.reset();
+  this.formulario.reset({
+
+    foto: 'assets/imgs/coche_default.jpg';
+  });
+
 
 
   console.log('Llamar Servicio para crear Coche');
