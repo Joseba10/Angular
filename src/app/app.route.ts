@@ -9,6 +9,7 @@ import { Page404Component } from './page404/page404.component';
 import { ConcesionarioComponent } from './concesionario/concesionario.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { RecetarioComponent } from './recetario/recetario.component';
+import { FormBasicoComponent } from './form-basico/form-basico.component';
 
 //Rutas de nuestra App
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'propiedades', component: PropiedadesComponent },
   { path: 'concesionario', component: ConcesionarioComponent },
   { path: 'recetario', component: RecetarioComponent },
+  { path: 'formulariobasico', component: FormBasicoComponent },
   { path: '**', component: Page404Component }
 ];
 

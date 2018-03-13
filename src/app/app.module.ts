@@ -28,6 +28,7 @@ import { RoundPipe } from './Pipes/redondear';
 import { RecetasFilter } from './Pipes/recetasfilter.pipe';
 import { FormularioComponent } from './recetario/formulario/formulario.component';
 import { ConcesionarioformularioComponent } from './concesionario/concesionarioformulario/concesionarioformulario.component';
+import { FormBasicoComponent } from './form-basico/form-basico.component';
 
 
 
@@ -52,6 +53,7 @@ import { ConcesionarioformularioComponent } from './concesionario/concesionariof
     RecetasFilter,
     FormularioComponent,
     ConcesionarioformularioComponent,
+    FormBasicoComponent,
   
 
    
