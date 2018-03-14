@@ -46,7 +46,7 @@ onSubmit(event){
   //limpiar formulario
   this.formulario.reset({
 
-    foto: 'assets/imgs/coche_default.jpg';
+    foto: 'assets/imgs/coche_default.jpg'
   });
 
 
